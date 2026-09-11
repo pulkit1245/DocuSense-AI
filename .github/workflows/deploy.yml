@@ -1,4 +1,4 @@
-name: Deploy to Cloud Run
+name: Deploy DocuSense AI to Cloud Run
 
 on:
   push:
@@ -25,13 +25,13 @@ jobs:
       - name: Set up gcloud
         uses: google-github-actions/setup-gcloud@v2
 
-      - name: Deploy to Cloud Run
+      - name: Deploy DocuSense AI to Cloud Run
         # --set-secrets / --set-env-vars are declarative: list everything the
         # service needs so the deploy is reproducible. Both the OpenAI and
         # LangSmith keys come from Secret Manager; the LangSmith config enables
         # production tracing (EU endpoint + synchronous flush on serverless).
         run: |
-          gcloud run deploy compliance-rag-agent \
+          gcloud run deploy docusense-ai \
             --source . \
             --project compliance-rag-499207 \
             --region europe-west1 \

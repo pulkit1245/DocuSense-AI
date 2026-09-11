@@ -1,8 +1,10 @@
-# Compliance RAG Agent
+# DocuSense AI
 
-A full-stack, production-style **Retrieval-Augmented Generation** app that answers natural-language questions about compliance and regulatory documents — with **source citations**. It ships with a polished web UI, a **LangGraph** agentic pipeline, **hybrid search** (vector similarity + BM25, merged with Reciprocal Rank Fusion), and is deployed to **Google Cloud Run** with **keyless GitHub Actions CI/CD**.
+> **Ask anything about your legal & policy documents.**
 
-> **Live demo:** `https://compliance-rag-agent-kwxekadtlq-ew.a.run.app/` &nbsp;·&nbsp;
+A full-stack, production-style **Retrieval-Augmented Generation** app that answers natural-language questions about legal, compliance and regulatory documents — with **source citations**. It ships with a polished web UI, a **LangGraph** agentic pipeline, **hybrid search** (vector similarity + BM25, merged with Reciprocal Rank Fusion), and is deployed to **Google Cloud Run** with **keyless GitHub Actions CI/CD**.
+
+> **Live demo:** `https://docusense-ai-kwxekadtlq-ew.a.run.app/` &nbsp;·&nbsp;
 
 The demo is **public and cost-safe**: every visitor gets a few free questions on a server key (rate-limited, with a hard global cap), or can paste their **own OpenAI key** for unlimited use — and the server key never reaches the browser.
 
@@ -137,7 +139,7 @@ eval/.venv/Scripts/python.exe eval/score_ragas.py   # -> ragas_results.csv
 ## Quick start (local)
 
 ```bash
-cd compliance-rag-agent
+cd docusense-ai
 python -m venv .venv
 .venv\Scripts\activate          # Windows  (source .venv/bin/activate on macOS/Linux)
 pip install -r requirements.txt
@@ -179,7 +181,7 @@ Open **http://localhost:8080**. On first load it embeds the bundled GDPR corpus 
 ```bash
 echo -n "sk-your-key" | gcloud secrets create openai-api-key --data-file=-
 
-gcloud run deploy compliance-rag-agent \
+gcloud run deploy docusense-ai \
   --source . --region europe-west1 --allow-unauthenticated \
   --set-secrets=OPENAI_API_KEY=openai-api-key:latest \
   --memory 1Gi --cpu 1 --min-instances 0 --max-instances 3 --timeout 300
@@ -198,7 +200,7 @@ gcloud run deploy compliance-rag-agent \
 ## Project structure
 
 ```
-compliance-rag-agent/
+docusense-ai/
 ├── app/
 │   ├── main.py                 # FastAPI app factory, UI mount, startup seeding
 │   ├── config.py               # pydantic-settings (model, ChromaDB, demo limits)

@@ -50,10 +50,10 @@ def generate(state: QAState) -> dict:
         context = "\n\n".join(context_parts)
 
         system_prompt = (
-            "You are a compliance expert assistant. Answer questions based ONLY on the "
-            "provided document excerpts. Cite your sources using [1], [2], etc. to "
-            "reference the excerpt numbers. If the provided excerpts don't contain "
-            "enough information to answer the question, say so explicitly."
+            "You are DocuSense AI, an expert document intelligence assistant. "
+            "Answer questions based ONLY on the provided document excerpts. "
+            "Cite your sources using [1], [2], etc. to reference the excerpt numbers. "
+            "If the provided excerpts don't contain enough information to answer the question, say so explicitly."
         )
         user_prompt = f"Document excerpts:\n\n{context}\n\nQuestion: {state['question']}"
 

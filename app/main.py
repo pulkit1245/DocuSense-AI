@@ -23,9 +23,9 @@ async def lifespan(app: FastAPI):
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="Compliance RAG Agent",
+        title="DocuSense AI",
         description=(
-            "Retrieval-Augmented Generation for compliance and regulatory documents. "
+            "Ask anything about your legal & policy documents. "
             "Hybrid search (vector + BM25) with source citations."
         ),
         version="1.0.0",
