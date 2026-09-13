@@ -1,3 +1,4 @@
+"""DocuSense AI — LangGraph state definition."""
 from typing import List, Optional, TypedDict
 
 
@@ -16,7 +17,7 @@ class Citation(TypedDict):
     text: str
 
 
-class QAState(TypedDict):
+class DocuSenseState(TypedDict):
     question: str
     retrieved_chunks: List[RetrievedChunk]
     answer: str
