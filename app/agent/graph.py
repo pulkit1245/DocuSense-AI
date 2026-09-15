@@ -1,3 +1,4 @@
+# DocuSense AI — LangGraph StateGraph definition
 from langgraph.graph import END, StateGraph
 
 from app.agent.nodes import format_response, generate, retrieve, validate_input
