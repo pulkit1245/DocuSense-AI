@@ -1,3 +1,4 @@
+# DocuSense AI — FastAPI application factory
 import os
 import threading
 from contextlib import asynccontextmanager
