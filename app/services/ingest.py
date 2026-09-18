@@ -1,3 +1,4 @@
+# DocuSense AI — document ingestion service (chunk → embed → ChromaDB)
 import hashlib
 from typing import List, Optional
 
