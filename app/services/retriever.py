@@ -1,3 +1,4 @@
+# DocuSense AI — hybrid retrieval (vector + BM25 + RRF)
 import re
 from typing import List, Optional, Tuple
 
