@@ -1,3 +1,4 @@
+# DocuSense AI — auto-seed demo knowledge base on startup
 """Auto-seed the demo knowledge base from bundled default documents.
 
 Drop any .pdf / .txt / .md / .csv files into  app/data/  and they are ingested on
