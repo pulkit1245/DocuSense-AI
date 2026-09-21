@@ -1,3 +1,4 @@
+# DocuSense AI — corpus-aware suggested questions
 """Dynamic suggested questions, generated from the current knowledge base.
 
 The LLM is asked to propose a few natural questions about whatever documents are
