@@ -1,3 +1,4 @@
+# DocuSense AI — Prometheus metrics (latency + retrieval quality)
 """Prometheus metrics for the RAG pipeline.
 
 Exposes the two things you actually want to watch on a production RAG service:
