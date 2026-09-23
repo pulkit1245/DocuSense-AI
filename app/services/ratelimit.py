@@ -1,3 +1,4 @@
+# DocuSense AI — per-visitor and global rate limiting
 """In-memory per-visitor rate limiting for the public demo.
 
 Counters live in process memory, so they reset on a new day or when Cloud Run
