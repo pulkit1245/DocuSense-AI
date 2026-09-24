@@ -1,3 +1,4 @@
+# DocuSense AI — Pydantic v2 response schemas
 from typing import List, Optional
 
 from pydantic import BaseModel
