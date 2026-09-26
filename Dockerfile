@@ -1,3 +1,5 @@
+LABEL org.opencontainers.image.title="DocuSense AI"
+LABEL org.opencontainers.image.description="Ask anything about your legal & policy documents"
 FROM python:3.12-slim
 
 WORKDIR /app
