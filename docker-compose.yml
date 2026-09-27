@@ -1,3 +1,4 @@
+# DocuSense AI — local dev compose (app + ChromaDB)
 services:
   chromadb:
     image: chromadb/chroma:latest
