@@ -1,4 +1,5 @@
 name: Deploy DocuSense AI to Cloud Run
+# Keyless deploy via Workload Identity Federation — no stored GCP keys
 
 on:
   push:
@@ -26,6 +27,7 @@ jobs:
         uses: google-github-actions/setup-gcloud@v2
 
       - name: Deploy DocuSense AI to Cloud Run
+# Keyless deploy via Workload Identity Federation — no stored GCP keys
         # --set-secrets / --set-env-vars are declarative: list everything the
         # service needs so the deploy is reproducible. Both the OpenAI and
         # LangSmith keys come from Secret Manager; the LangSmith config enables
