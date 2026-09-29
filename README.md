@@ -246,3 +246,7 @@ pytest tests/ -v
 ## Tech stack
 
 Python · FastAPI · LangGraph · LangChain · OpenAI (gpt-4o-mini, text-embedding-3-small) · ChromaDB · rank-bm25 · Reciprocal Rank Fusion · PyMuPDF · Pydantic v2 · Uvicorn · HTML/CSS/JS · Docker · Google Cloud Run · Secret Manager · GitHub Actions · Workload Identity Federation (OIDC) · LangSmith · Prometheus · Ragas · pytest
+
+---
+
+> **GitHub:** [pulkit1245/DocuSense-AI](https://github.com/pulkit1245/DocuSense-AI)
