@@ -28,3 +28,7 @@ class DocuSenseState(TypedDict):
     # Per-stage latency (milliseconds), populated by the nodes for /metrics.
     retrieval_ms: Optional[float]
     generation_ms: Optional[float]
+
+
+# Backward-compatible alias — nodes.py and graph.py import QAState
+QAState = DocuSenseState
